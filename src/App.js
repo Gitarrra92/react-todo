@@ -12,19 +12,14 @@ class App extends Component {
 
     myTodos : [{
       id: uuid.v4(),
-      title: "write an app",
+      title: "Add your todos",
       completed: false
     },
     {
       id: uuid.v4(),
-      title: "learn blabla",
+      title: "Sample task",
       completed: false
-    },
-    {
-      id: uuid.v4(),
-      title: "React tasks",
-      completed: false
-    },
+    }
   
     ]
   }
