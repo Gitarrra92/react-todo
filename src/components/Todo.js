@@ -16,7 +16,7 @@ export class Todo extends Component {
         return (
             <div style={this.todoStyles()}>
                 <h3>
-                    <input type="checkbox" onChange={this.props.todoCompleted.bind(this, id)} placeholder={"write your task"}></input> {" "}
+                    <input type="checkbox" onChange={this.props.todoCompleted.bind(this, id)}></input> {" "}
                     {title}
                     <button onClick={this.props.deleteButton.bind(this, id)} style={buttonDelete}>X</button>
                 </h3>
