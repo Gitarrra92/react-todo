@@ -36,6 +36,10 @@ class App extends Component {
     })})
   }
 
+  deleteButton = (id) => {
+    this.setState({myTodos: [...this.state.myTodos.filter(todo => todo.id !== id)]});
+  }
+
   render() {
     return (
       <div className="App">
@@ -43,7 +47,7 @@ class App extends Component {
         <Header />
         </header>
         <div style={todosy}>
-        <Todos myTodos={this.state.myTodos} todoCompleted={this.todoCompleted} />
+        <Todos myTodos={this.state.myTodos} todoCompleted={this.todoCompleted} deleteButton={this.deleteButton}/>
         </div>
       </div>
     );
